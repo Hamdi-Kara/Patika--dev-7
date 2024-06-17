@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linkedin</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+      input {
+        font-size: x-large;
+        color:  blue;
+        
+      }
+      footer  {
+        
+        background-color: lightgray;
+        text-align: center;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mx-5">
+      <img  width="25px" height="25px" src="data:image/png;base64,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" alt="" srcset="">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Linkedin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex mr-4" role="search">
+            <input class="form-control me-2 text-primary" type="search" placeholder="Ara" aria-label="Ara">
+            <button class="btn btn-outline-primary btn-sm" type="submit">Ara</button>
+          </form>
+          
+        </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <img  width="33px" height="33px" src="img/bell-regular.svg" alt="">
+            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <img src="img/camera-solid.svg" width="33px" height="33px" alt="">
+            <a class="nav-link" href="#">İş İlanlari</a>
+          </li>
+          <li class="nav-item">
+            <img src="img/circle-user-regular.svg" width="33px" height="33px" alt="">
+            <a class="nav-link" >Mesajlaşma</a>
+          </li>
+          <li class="nav-item">
+            <img src="img/envelope-regular.svg" width="33px" height="33px" alt="">
+            <a class="nav-link disabled" aria-disabled="true" >Bildirim</a>
+          </li>
+          <li class="nav-item">
+            <img src="img/user-solid-2.svg" width="33px" height="33px" alt="">
+            <a class="nav-link disabled" aria-disabled="true" >Ben</a>
+          </li>
+          <li class="nav-item">
+            <img src="img/house-solid.svg" width="33px" height="33px" alt="">
+            <a class="nav-link disabled" aria-disabled="true" >İş için</a>
+          </li>
+          <li class="nav-item">
+            <img src="img/users-solid.svg" width="33px" height="33px" alt="">
+
+            <a class="nav-link disabled" aria-disabled="true">Learning</a>
+          </li>
+        </ul>
+      </div>  
+    </nav>
+
+   
+
+
+
+
+
+
+
+
+   <div class="container">
+    <div class="mt-5"> 
+     <form action="action/page.png" class="text-center ">
+      <span class="border border-white"></span>
+      <img width="37px" height="37px" src="img/circle-user-regular.svg" class="rounded-circle" alt="...">
+      <input class="rounded-pill" id="tnb-google-search-input" type="text" placeholder="Search..." autocomplete="off" aria-label="Search field" >
+      <button class="artdeco-button" type="button">
+       <svg role="none" aria-hidden="true" viewBox="0 0 24 24" width="22" heigth="22" type="image">
+
+       </svg>
+       <span class="artdeco-button__text">Medya</span>
+      </button>
+     </form>
+     
+    </div> 
+   </div>
+
+
+   
+   
+   <div class="row mt-5">
+    <div class="card mx-5 mb-3 " style="width: 18rem;">
+      <img width="32px" height="32px" src="img/camera-solid.svg" class="card-img-top bg-body-tertiary" alt="...">
+      <div class="card-body mt-5 mb-3">
+        <h5 class="card-title">Hamdi Kara</h5>
+        <p class="card-text">Some quick example text to build.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+
+
+
+        
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Grup</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Etkinlik</li>
+          </ol>
+        </nav>
+        
+        
+      </div>
+    </div>
+
+    
+
+
+
+
+
+    <div class="col" style="width: 18rem;">
+      <img src="img/ana-rita-martins-CIIGoGjdzI8-unsplash.jpg" class="card-img-top" alt="...">
+    
+    <div class="card-body ">
+      <h5 class="card-title">JAPONYA</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card mx-5 mb-3" style="width: 18rem ">
+    <img src="img/dylan-sauerwein-23G50M0o0uY-unsplash.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Arizona</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+
+  </div>  
+    
+  <div class="container">
+    <div class="row">
+      <img src="img/seval-torun-ohSuVYcdf0Y-unsplash.jpg" width="80px" class="card-img-top" alt="..." srcset="">
+      <div class="col" style="width: 18rem;">
+        <h5>Çin</h5>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, natus blanditiis saepe odit rerum in deleniti! Ut soluta consequuntur corporis maiores atque animi praesentium quibusdam incidunt, corrupti ullam tempora officia.
+       Fugiat optio doloremque error, minima culpa id dignissimos accusantium quam illum exercitationem quibusdam quo nisi nostrum! Sint facere, asperiores eum veniam excepturi ex cumque, vitae fuga omnis provident necessitatibus quibusdam.</p>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <footer>
+    <a href="https://www.bootstrap.com"><p>Home</p></a>
+    <img src="img/linkedin.svg" width="25px" height="25px" alt="">
+    <p>Features</p>
+    <p>Pricing</p>
+    
+    
+
+  </footer>
+
+  </body>
+</html>
+         
